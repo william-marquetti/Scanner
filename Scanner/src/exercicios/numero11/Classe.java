@@ -1,9 +1,10 @@
-/*
- * 6.	Escreva no console para digitar um número inteiro, leia o número inteiro digitado. 
+/*11.	Escreva no console para digitar um número inteiro, leia o número inteiro digitado. 
  * Escreva no console para digitar outro número inteiro, leia o número inteiro digitado. 
- * Imprima no console o resultado da divisão dos dois números.
+ * Imprima no console o resto do primeiro número digitado com o segundo número digitado, 
+ * o multiplicando por 10.
+ * 
  */
-package exercicios.numero6;
+package exercicios.numero11;
 
 import java.util.Scanner;
 
@@ -21,11 +22,9 @@ public class Classe {
 		System.out.println("Digite o segundo numero");
 		numero2 = scanner.nextInt();
 
-		System.out.println( ( numero1 / numero2) );
-				
+		System.out.println( ( (numero1 % numero2 ) * 10 ) );
+		
 
 		scanner.close();
 	}
-
-
 }

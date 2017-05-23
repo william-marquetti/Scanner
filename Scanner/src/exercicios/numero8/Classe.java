@@ -1,9 +1,10 @@
 /*
- * 6.	Escreva no console para digitar um número inteiro, leia o número inteiro digitado. 
+ * 8.	Escreva no console para digitar um número inteiro, leia o número inteiro digitado. 
  * Escreva no console para digitar outro número inteiro, leia o número inteiro digitado. 
- * Imprima no console o resultado da divisão dos dois números.
+ * Imprima no console true se o primeiro número digitado é maior que 5 e
+ *  o segundo número menor que 10. Caso contrário imprima false.
  */
-package exercicios.numero6;
+package exercicios.numero8;
 
 import java.util.Scanner;
 
@@ -21,11 +22,14 @@ public class Classe {
 		System.out.println("Digite o segundo numero");
 		numero2 = scanner.nextInt();
 
-		System.out.println( ( numero1 / numero2) );
-				
+		if ( ( numero1 > 5 ) && ( numero2 < 10) ){
+			System.out.println(true);
+		}else{
+			System.out.println(false);
+		}
+		
 
 		scanner.close();
 	}
-
 
 }
