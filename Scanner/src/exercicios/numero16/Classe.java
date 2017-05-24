@@ -32,6 +32,27 @@
  */
 package exercicios.numero16;
 
+import java.util.Scanner;
+
 public class Classe {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String numeros;
+		
+		System.out.println("Digite os números desejados");
+		numeros = scanner.nextLine();
+		
+		numeros.split("\\s");
+		
+		for ( int aux = 0; aux < numeros.length(); aux++){
+			System.out.println(numeros.split("\\s"));
+		}
+		
+		scanner.close();
+		
+		
+	}
 
 }
