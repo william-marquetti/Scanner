@@ -30,7 +30,7 @@ public class Classe {
 		System.out.println("Digite o terceiro numero");
 		numero3 = scanner.nextInt();
 
-		System.out.println( ( (numero1 * numero3 ) + (Math.pow(numero2, 3) ) ) );
+		System.out.println( (int) ( (numero1 * numero3 ) + (Math.pow(numero2, 3) ) ) );
 		
 
 		scanner.close();
