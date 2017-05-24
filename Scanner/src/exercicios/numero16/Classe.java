@@ -44,10 +44,15 @@ public class Classe {
 		System.out.println("Digite os números desejados");
 		numeros = scanner.nextLine();
 		
-		numeros.split("\\s");
+		String[] partes = numeros.split("\\s");
 		
-		for ( int aux = 0; aux < numeros.length(); aux++){
-			System.out.println(numeros.split("\\s"));
+		for (String s : partes){
+			
+			for (char letra ='A'; letra <= 'Z'; letra++){
+				System.out.println(s);
+			}
+			
+			
 		}
 		
 		scanner.close();
