@@ -36,28 +36,41 @@ import java.util.Scanner;
 
 public class Classe {
 	public static void main(String[] args) {
-		
+
 		Scanner scanner = new Scanner(System.in);
-		
+
 		String numeros;
-		
+
 		System.out.println("Digite os números desejados");
 		numeros = scanner.nextLine();
-		
+
+		// adiciona cada item entre os espaços no array de String partes
 		String[] partes = numeros.split("\\s");
-		
-		for (String s : partes){
+
+		// adiciona cada letra da string para o array de char alfabeto
+		char[] alfabeto = "abcdefghijlmnopqrstuvxz".toCharArray();
+
+		// percorre o array de números digitados
+		for (int numerosDigitados = 0; numerosDigitados < partes.length; numerosDigitados++) {
 			
-			for (char letra ='A'; letra <= 'Z'; letra++){
-				System.out.println(s);
+			// percorre o array de letras do alfabeto
+			for (int aux = 0; aux <= alfabeto.length; aux++) {
+				
+				// compara se o valor armazenado no array de numeros digitados é igual a posição da letra do alfabeto
+				if (Integer.parseInt(partes[numerosDigitados])-1 == aux ) {
+					System.out.print(" " + alfabeto[aux]);
+					
+				}
+
 			}
-			
-			
+
 		}
 		
+		System.out.println();
+		//System.out.println("Viu como funciona?");
+
 		scanner.close();
-		
-		
+
 	}
 
 }
