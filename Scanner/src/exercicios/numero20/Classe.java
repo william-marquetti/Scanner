@@ -18,7 +18,7 @@ public class Classe {
 		String outroTexto  = "";
 		
 		System.out.println("Digite um texto");
-		scanner.nextLine();
+		textoUsuario = scanner.nextLine();
 		scanner.close();
 		
 		outroTexto = textoUsuario;
